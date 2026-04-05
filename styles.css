@@ -1,0 +1,69 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: #0b0b0b;
+  color: #00ffcc;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  margin-bottom: 20px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 15px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc inset;
+  transition: 0.2s all;
+  color: #00ffcc;
+}
+
+.cell:hover {
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff inset, 0 0 40px #00ffff;
+  transform: scale(1.05);
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  box-shadow: 0 0 15px #ff00ff, 0 0 25px #00ffff;
+  transition: 0.2s all;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff00ff, 0 0 35px #00ffff, 0 0 45px #ff00ff inset;
+}
